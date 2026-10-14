@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Rudresh G - AI/ML Enthusiast &amp; Python Programmer Portfolio. CSE student at SRIT with expertise in Python, SQL, HTML/CSS, and Machine Learning." />
+  <meta name="keywords" content="Rudresh G, Portfolio, AI ML Enthusiast, Python Programmer, Python, SQL, HTML, CSS, Machine Learning" />
+  <meta name="author" content="Rudresh G" />
+  <title>Rudresh G | AI/ML Enthusiast & Python Programmer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="portfolio.css" />
+</head>
+<body>
+
+  <!-- ===== CUSTOM CURSOR ===== -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo" id="navLogo">
+        <span class="logo-text">RG</span>
+        <span class="logo-dot"></span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active" id="navHome">Home</a></li>
+        <li><a href="#about" class="nav-link" id="navAbout">About</a></li>
+        <li><a href="#skills" class="nav-link" id="navSkills">Skills</a></li>
+        <li><a href="#projects" class="nav-link" id="navProjects">Projects</a></li>
+        <li><a href="#experience" class="nav-link" id="navExperience">Experience</a></li>
+        <li><a href="#contact" class="nav-link" id="navContact">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <img src="hero_bg.png" alt="Hero background" class="hero-bg-img" />
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-particles" id="heroParticles"></div>
+    <div class="hero-content">
+      <div class="hero-photo-wrap" id="heroPhoto">
+        <img src="rudresh.jpg" alt="Rudresh G" class="hero-photo" />
+        <div class="hero-photo-ring"></div>
+        <div class="hero-photo-ring ring-2"></div>
+      </div>
+      <div class="hero-badge" id="heroBadge">
+        <span class="badge-dot"></span>
+        Available for opportunities
+      </div>
+      <h1 class="hero-name" id="heroName">
+        <span class="name-line">Hi, I'm</span>
+        <span class="name-main">Rudresh G</span>
+      </h1>
+      <div class="hero-roles" id="heroRoles">
+        <span class="role-prefix">I build </span>
+        <span class="role-text" id="roleText">AI/ML Solutions</span>
+        <span class="role-cursor">|</span>
+      </div>
+      <p class="hero-desc" id="heroDesc">
+        Motivated CSE student with a foundational knowledge in AI/ML &amp; Full Stack Development,
+        seeking to contribute to intelligent automation and grow technical expertise.
+      </p>
+      <div class="hero-cta" id="heroCta">
+        <a href="#projects" class="btn btn-primary" id="btnViewWork">
+          <span>View My Work</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#contact" class="btn btn-outline" id="btnHireMe">
+          <span>Hire Me</span>
+        </a>
+      </div>
+      <div class="hero-stats" id="heroStats">
+        <div class="stat-item">
+          <span class="stat-number" data-target="3">0</span>
+          <span class="stat-label">Projects</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="2">0</span>
+          <span class="stat-label">Certifications</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="8">0</span>
+          <span class="stat-label">CGPA</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll" id="heroScroll">
+      <span>Scroll Down</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Get To Know</span>
+        <h2 class="section-title">About Me</h2>
+        <p class="section-subtitle">A passionate developer from Andhra Pradesh</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-visual" id="aboutVisual">
+          <div class="about-card-main">
+            <div class="about-avatar">
+              <div class="avatar-circle">
+                <img src="rudresh.jpg" alt="Rudresh G" class="avatar-photo" />
+              </div>
+              <div class="avatar-ring"></div>
+              <div class="avatar-ring ring-2"></div>
+            </div>
+            <div class="about-info-chip">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+              Kalyandurg, AP
+            </div>
+          </div>
+          <div class="about-float-card card-1" id="aboutCard1">
+            <div class="float-icon">🤖</div>
+            <span>AI / ML</span>
+          </div>
+          <div class="about-float-card card-2" id="aboutCard2">
+            <div class="float-icon">🗄️</div>
+            <span>SQL</span>
+          </div>
+          <div class="about-float-card card-3" id="aboutCard3">
+            <div class="float-icon">🐍</div>
+            <span>Python</span>
+          </div>
+        </div>
+        <div class="about-content" id="aboutContent">
+          <h3 class="about-heading">Aspiring AI/ML Enthusiast &amp; Python Programmer</h3>
+          <p class="about-text">
+            I'm a Bachelor of Technology student in Computer Science Engineering at
+            <strong>Srinivasa Ramanujan Institute of Technology (SRIT)</strong>, Anantapur, AP,
+            maintaining a strong CGPA of <strong>8.02</strong>.
+          </p>
+          <p class="about-text">
+            My passion lies in building intelligent systems using machine learning and developing
+            robust web applications. I've worked on projects ranging from ML-based price prediction
+            to quantum-secure file transfer systems.
+          </p>
+          <div class="about-details">
+            <div class="detail-row" id="detailDegree">
+              <div class="detail-icon">🎓</div>
+              <div class="detail-text">
+                <span class="detail-label">Degree</span>
+                <span class="detail-value">B.Tech CSE (2022 – 2026)</span>
+              </div>
+            </div>
+            <div class="detail-row" id="detailLocation">
+              <div class="detail-icon">📍</div>
+              <div class="detail-text">
+                <span class="detail-label">Location</span>
+                <span class="detail-value">Kalyandurg, Andhra Pradesh – 515761</span>
+              </div>
+            </div>
+            <div class="detail-row" id="detailEmail">
+              <div class="detail-icon">✉️</div>
+              <div class="detail-text">
+                <span class="detail-label">Email</span>
+                <span class="detail-value"><a href="mailto:rudragandikota@gmail.com" class="detail-link">rudragandikota@gmail.com</a></span>
+              </div>
+            </div>
+            <div class="detail-row" id="detailPhone">
+              <div class="detail-icon">📱</div>
+              <div class="detail-text">
+                <span class="detail-label">Phone</span>
+                <span class="detail-value">+91 9640390994</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-actions">
+            <a href="#contact" class="btn btn-primary" id="btnContact">Let's Talk</a>
+            <a href="https://www.linkedin.com/in/rudreshg" target="_blank" rel="noopener" class="btn btn-ghost" id="btnLinkedIn">LinkedIn ↗</a>
+            <a href="https://github.com/Rudresh-24" target="_blank" rel="noopener" class="btn btn-ghost" id="btnGitHub">GitHub ↗</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION SECTION ===== -->
+  <section class="education section" id="education">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Academic Journey</span>
+        <h2 class="section-title">Education</h2>
+        <p class="section-subtitle">Building a strong foundation for the future</p>
+      </div>
+      <div class="timeline" id="eduTimeline">
+
+        <div class="timeline-item" id="eduBtech">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div class="timeline-icon">🎓</div>
+              <div class="timeline-meta">
+                <span class="timeline-year">2022 – 2026</span>
+                <span class="timeline-location">Anantapur, AP</span>
+              </div>
+            </div>
+            <h3 class="timeline-title">Bachelor of Technology – CSE</h3>
+            <p class="timeline-org">Srinivasa Ramanujan Institute of Technology (SRIT)</p>
+            <div class="timeline-badge">CGPA: 8.02</div>
+          </div>
+        </div>
+
+        <div class="timeline-item" id="eduInter">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div class="timeline-icon">📚</div>
+              <div class="timeline-meta">
+                <span class="timeline-year">2020 – 2022</span>
+                <span class="timeline-location">Kalyandurg, AP</span>
+              </div>
+            </div>
+            <h3 class="timeline-title">Board of Intermediate Education – MPC</h3>
+            <p class="timeline-org">Sri Sri Krishna Junior College</p>
+            <div class="timeline-badge">66%</div>
+          </div>
+        </div>
+
+        <div class="timeline-item" id="eduSchool">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div class="timeline-icon">🏫</div>
+              <div class="timeline-meta">
+                <span class="timeline-year">2019 – 2020</span>
+                <span class="timeline-location">Kalyandurg, AP</span>
+              </div>
+            </div>
+            <h3 class="timeline-title">Secondary School Education – 10th Class</h3>
+            <p class="timeline-org">K C Govt. High School</p>
+            <div class="timeline-badge">76%</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS SECTION ===== -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">What I Know</span>
+        <h2 class="section-title">Technical Skills</h2>
+        <p class="section-subtitle">Technologies I work with to build amazing things</p>
+      </div>
+      <div class="skills-grid" id="skillsGrid">
+
+        <div class="skill-category" id="skillLang">
+          <div class="category-header">
+            <span class="category-icon">💻</span>
+            <h3>Programming Languages</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag" id="tagPython">Python</span>
+          </div>
+        </div>
+
+        <div class="skill-category" id="skillWeb">
+          <div class="category-header">
+            <span class="category-icon">🌐</span>
+            <h3>Web Technologies</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag" id="tagHTML">HTML5</span>
+            <span class="skill-tag" id="tagCSS">CSS3</span>
+          </div>
+        </div>
+
+        <div class="skill-category" id="skillFramework">
+          <div class="category-header">
+            <span class="category-icon">⚙️</span>
+            <h3>Frameworks &amp; Libraries</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag" id="tagBootstrap">Bootstrap</span>
+          </div>
+        </div>
+
+        <div class="skill-category" id="skillDB">
+          <div class="category-header">
+            <span class="category-icon">🗄️</span>
+            <h3>Database</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag" id="tagSQL">SQL</span>
+          </div>
+        </div>
+
+        <div class="skill-category" id="skillTools">
+          <div class="category-header">
+            <span class="category-icon">🛠️</span>
+            <h3>Tools &amp; Platforms</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag" id="tagVSCode">VS Code</span>
+            <span class="skill-tag" id="tagGit">Git</span>
+            <span class="skill-tag" id="tagGitHub">GitHub</span>
+          </div>
+        </div>
+
+        <div class="skill-category" id="skillML">
+          <div class="category-header">
+            <span class="category-icon">🤖</span>
+            <h3>AI / ML Concepts</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag" id="tagScikitLearn">Scikit-Learn</span>
+            <span class="skill-tag" id="tagML">Machine Learning</span>
+            <span class="skill-tag" id="tagDataPrep">Data Preprocessing</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS SECTION ===== -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">My Work</span>
+        <h2 class="section-title">Projects</h2>
+        <p class="section-subtitle">Things I've built that I'm proud of</p>
+      </div>
+      <div class="projects-grid" id="projectsGrid">
+
+        <div class="project-card" id="projectCarPrice">
+          <div class="project-glow"></div>
+          <div class="project-header">
+            <div class="project-icon">🚗</div>
+            <div class="project-links">
+              <a href="https://github.com/Rudresh-24" target="_blank" rel="noopener" class="project-link" id="projectCarPriceGH" aria-label="View Car Price project on GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-date">August 2025</div>
+          <h3 class="project-title">Prediction of Car Price Using ML</h3>
+          <p class="project-desc">
+            A machine learning model to predict car prices using Python and its libraries. 
+            Applied end-to-end ML pipeline including data cleaning, feature encoding, and model evaluation.
+          </p>
+          <ul class="project-highlights">
+            <li>Data cleaning, feature encoding &amp; model evaluation using Scikit-Learn</li>
+            <li>Evaluated Linear &amp; Lasso Regression models</li>
+            <li>Achieved R² score of <strong>0.92</strong></li>
+          </ul>
+          <div class="project-stack">
+            <span class="stack-tag">Python</span>
+            <span class="stack-tag">Scikit-Learn</span>
+            <span class="stack-tag">ML</span>
+            <span class="stack-tag">Data Analysis</span>
+          </div>
+        </div>
+
+        <div class="project-card project-featured" id="projectQKD">
+          <div class="project-glow"></div>
+          <div class="project-featured-badge">Featured</div>
+          <div class="project-header">
+            <div class="project-icon">🔐</div>
+            <div class="project-links">
+              <a href="https://github.com/Rudresh-24" target="_blank" rel="noopener" class="project-link" id="projectQKDGH" aria-label="View QKD project on GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-date">January 2026</div>
+          <h3 class="project-title">QKD-Based Hybrid Framework for Secure File Transfer</h3>
+          <p class="project-desc">
+            A cutting-edge quantum-secure file transfer system combining Quantum Key Distribution 
+            with classical AES encryption for unbreakable security.
+          </p>
+          <ul class="project-highlights">
+            <li>Implemented quantum-secure file transfer using QKD &amp; hybrid classical encryption</li>
+            <li>Integrated RSA for quantum key generation</li>
+            <li>AES for authenticated symmetric encryption</li>
+          </ul>
+          <div class="project-stack">
+            <span class="stack-tag">Python</span>
+            <span class="stack-tag">QKD</span>
+            <span class="stack-tag">BB84</span>
+            <span class="stack-tag">AES Encryption</span>
+            <span class="stack-tag">RSA</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE SECTION ===== -->
+  <section class="experience section" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">My Journey</span>
+        <h2 class="section-title">Experience &amp; Certifications</h2>
+        <p class="section-subtitle">Internships and certifications that shaped my skills</p>
+      </div>
+      <div class="exp-grid">
+
+        <!-- Internships -->
+        <div class="exp-column" id="expInternships">
+          <h3 class="exp-col-title">
+            <span class="col-icon">💼</span> Internships
+          </h3>
+          <div class="exp-card" id="expAICTE">
+            <div class="exp-card-accent"></div>
+            <div class="exp-period">Oct – Dec 2024</div>
+            <h4 class="exp-title">Web Full Stack Developer</h4>
+            <p class="exp-org">AICTE – Virtual Internship</p>
+            <ul class="exp-points">
+              <li>Learned full stack web applications, mastered HTML, CSS, JavaScript &amp; Bootstrap for responsive UI/UX</li>
+              <li>Developed full-stack web applications during the AICTE virtual internship program</li>
+            </ul>
+            <div class="exp-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Bootstrap</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certifications -->
+        <div class="exp-column" id="expCerts">
+          <h3 class="exp-col-title">
+            <span class="col-icon">🏆</span> Certifications
+          </h3>
+          <div class="exp-card" id="certQuantum">
+            <div class="exp-card-accent accent-purple"></div>
+            <div class="exp-period">February 2026</div>
+            <h4 class="exp-title">Quantum Fundamentals</h4>
+            <p class="exp-org">Qiskit.tech</p>
+            <ul class="exp-points">
+              <li>Learned basics of quantum fundamentals and qubits</li>
+              <li>Gained knowledge on quantum mechanisms through the program</li>
+            </ul>
+            <div class="exp-tags">
+              <span>Quantum Computing</span><span>Qubits</span><span>Qiskit</span>
+            </div>
+          </div>
+          <div class="exp-card" id="certAPSSDC">
+            <div class="exp-card-accent accent-green"></div>
+            <div class="exp-period">March 2025</div>
+            <h4 class="exp-title">Wadhwani Employability Skills Program</h4>
+            <p class="exp-org">Wadhwani Foundation / APSSDC</p>
+            <ul class="exp-points">
+              <li>Enhanced communication, teamwork &amp; problem-solving skills</li>
+              <li>Trained in interview preparation, professional etiquette &amp; critical thinking for job readiness</li>
+            </ul>
+            <div class="exp-tags">
+              <span>Communication</span><span>Teamwork</span><span>Problem Solving</span>
+            </div>
+          </div>
+          <div class="exp-card" id="certSAP">
+            <div class="exp-card-accent accent-warning"></div>
+            <div class="exp-period">2026</div>
+            <h4 class="exp-title">SAP Cloud Backend Developer</h4>
+            <p class="exp-org">SAP – Cloud Certification Program</p>
+            <ul class="exp-points">
+              <li>Gained hands-on knowledge of SAP cloud backend architecture and development</li>
+              <li>Learned to build and deploy cloud-native backend solutions on the SAP platform</li>
+            </ul>
+            <div class="exp-tags">
+              <span>SAP</span><span>Cloud</span><span>Backend Dev</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Contact Me</h2>
+        <p class="section-subtitle">Have an opportunity or just want to say hi? Let's connect!</p>
+      </div>
+      <div class="contact-grid" id="contactGrid">
+        <div class="contact-info" id="contactInfo">
+          <h3 class="contact-heading">Let's Work Together</h3>
+          <p class="contact-text">
+            I'm currently open to internships, project collaborations, and full-time opportunities in 
+            AI/ML or Full Stack development. Don't hesitate to reach out!
+          </p>
+          <div class="contact-items">
+            <a href="mailto:rudragandikota@gmail.com" class="contact-item" id="contactEmail">
+              <div class="contact-item-icon">✉️</div>
+              <div class="contact-item-info">
+                <span class="contact-item-label">Email</span>
+                <span class="contact-item-value">rudragandikota@gmail.com</span>
+              </div>
+            </a>
+            <a href="tel:+919640390994" class="contact-item" id="contactPhone">
+              <div class="contact-item-icon">📞</div>
+              <div class="contact-item-info">
+                <span class="contact-item-label">Phone</span>
+                <span class="contact-item-value">+91 9640390994</span>
+              </div>
+            </a>
+            <div class="contact-item" id="contactLoc">
+              <div class="contact-item-icon">📍</div>
+              <div class="contact-item-info">
+                <span class="contact-item-label">Location</span>
+                <span class="contact-item-value">Kalyandurg, Andhra Pradesh – 515761</span>
+              </div>
+            </div>
+          </div>
+          <div class="contact-socials">
+            <a href="https://www.linkedin.com/in/rudreshg" target="_blank" rel="noopener" class="social-btn" id="socialLinkedIn" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="https://github.com/Rudresh-24" target="_blank" rel="noopener" class="social-btn" id="socialGitHub" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-group" id="formName">
+            <label for="nameInput">Your Name</label>
+            <input type="text" id="nameInput" name="name" placeholder="John Doe" required />
+          </div>
+          <div class="form-group" id="formEmail">
+            <label for="emailInput">Your Email</label>
+            <input type="email" id="emailInput" name="email" placeholder="john@example.com" required />
+          </div>
+          <div class="form-group" id="formSubject">
+            <label for="subjectInput">Subject</label>
+            <input type="text" id="subjectInput" name="subject" placeholder="Job Opportunity / Collaboration" required />
+          </div>
+          <div class="form-group" id="formMessage">
+            <label for="messageInput">Message</label>
+            <textarea id="messageInput" name="message" rows="5" placeholder="Hello Rudresh, I'd like to discuss..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full" id="btnSendMessage">
+            <span>Send Message</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2L15 22l-4-9-9-4 20-7z"/></svg>
+          </button>
+          <div class="form-success" id="formSuccess" style="display:none">
+            ✅ Thanks! I'll get back to you soon.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <span class="logo-text">RG</span>
+          <span class="logo-dot"></span>
+        </div>
+        <p class="footer-text">Designed &amp; Built by <strong>Rudresh G</strong></p>
+        <p class="footer-sub">© 2026 Rudresh G · Kalyandurg, Andhra Pradesh</p>
+        <div class="footer-socials">
+          <a href="https://www.linkedin.com/in/rudreshg" target="_blank" rel="noopener" aria-label="LinkedIn" id="footerLinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="https://github.com/Rudresh-24" target="_blank" rel="noopener" aria-label="GitHub" id="footerGitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== BACK TO TOP ===== -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <script src="portfolio.js"></script>
+</body>
+</html>
